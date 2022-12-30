@@ -712,12 +712,13 @@
     .account-menu h1{
        width: 80%;
        height: 50px;
-       margin-top: 3rem;
+       margin-top: 2rem;
+       font-size: 1.7rem;
      }
     .account-main{
         width: 100%;
         margin: auto;
-        margin-top: 200px;
+        margin-top: 120px;
         background-color: #fff;
         display: flex;
         flex-direction: column;
@@ -735,11 +736,11 @@
         flex-direction: column;
         gap: 1rem;
     }
-    .account-main h2{
+    .sub-account h2{
         width: 100%;
         margin: auto;
-        margin-block: 2rem;
-        /* outline: 2px solid; */
+        margin-block: 1rem;
+        font-size: 1.3rem;
     }
     .account-main ul{
         display: flex;
