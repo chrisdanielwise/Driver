@@ -87,18 +87,35 @@
         position: fixed;
         bottom: 0;
         width: 100%;
+        height: 50px;
+        
     }
     footer ul{
         width: inherit;
         display: flex;
         list-style: none;
         background: #FFFDF6;
-        height: 65px;
+        height: 100%;
+        border-top: 1px solid gray;
     }
     footer ul li{
         width: max-content;
         margin: auto;
+        position: relative;
     }
+    footer ul li a{
+      color: #000;
+      text-decoration: none;
+    }
+    footer ul li span{
+       position: absolute;
+       bottom: -50%;
+       left: -35%;
+       font-size: .8rem;
+    }
+    footer ul li img{
+      width:20px;
+     }
 }
 
 @media screen and (max-width:1000px) {
@@ -347,13 +364,23 @@
         font-size: .9rem;
      }
      .pickup-list3{
-        height: 10%;
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        text-align: left;
-        padding-left: 3%;
+        width: 100%;
+        list-style: none;
         font-weight: 700;
      }
+     .pickup-list3 li{
+        width: max-content;
+       margin-inline: 1rem auto;
+       padding: 10px;
+     }
+     .pickup-list3 img{
+        display: inline-block;
+        width: max-content;
+        margin-inline: auto 1rem;
+      }
     .pickup-main > a{
         display: block;
         height: 40px;
@@ -441,7 +468,7 @@
     /* DELIVERED */
 
     .delivered-main{
-        height: 83vh;
+        height: 80vh;
         width: 90%;
         margin-inline: auto;
         display: flex;
@@ -518,7 +545,8 @@
     }
     .delivered-list3 .sub-list{
         display: flex;
-        
+        /* outline: 2px solid red; */
+        margin-top: 1rem;
     }
     .delivered-list3 .sub-list ul{
       width: 70%;
@@ -611,7 +639,6 @@
      }
      .accepted-menu nav ul li:nth-child(2){
         color: #FECE2F;
-        ;
      }
      .accepted-menu nav ul li{
         margin: auto;
@@ -623,15 +650,166 @@
     .accepted-grid{
         position: relative;
     }
-    .accepted-grid span{
+    .accepted-grid .accepted{
         position: absolute;
         top: 10%;
-        right: 10%;
-        font-size: .6rem;
+        right: 15%;
+        font-size: .5rem;
+        display: inline-block;
+        border: 1px solid var(--main-color);
+        color: var(--main-color);
+        border-radius: 15px;
+        padding-inline: 5px;
+    }
+    .accepted-grid .approved{
+        position: absolute;
+        top: 10%;
+        right: 15%;
+        font-size: .5rem;
+        display: inline-block;
+        border: 1px solid #24D720;
+        color: #24D720;
+        ;
+        border-radius: 15px;
+        padding-inline: 5px;
     }
     .accepted-grid .more-icon{
         position: absolute;
         right: 5%;
         width: 18px;
     }
+
+    /* SEARCHING */
+    .searching-main{
+        position: relative;
+    }
+    [placeholder="Search anything"]{
+        width: 80%;
+        height: 40px;
+        margin-inline: 10%;
+        border-radius: 17px;
+        padding-left: 1rem;
+        outline: none;
+        border: .2px solid;
+    }
+    .searching-main img{
+        position: absolute;
+        top: 15%;
+        right: 11%;
+
+    }
+
+    /* ACCOUNT */
+    .account-menu {
+       width: 100%;
+       background-color: var(--main-color);
+       display: flex;
+       justify-content: center;
+       height: 200px;
+       position: fixed;
+       top: 0;
+    }
+    .account-menu h1{
+       width: 80%;
+       height: 50px;
+       margin-top: 3rem;
+     }
+    .account-main{
+        width: 100%;
+        margin: auto;
+        margin-top: 200px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        inset: 0;
+        top: -5%;
+    }
+    .sub-account{
+        height: 70%;
+        width: 80%;
+        margin-inline: 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .account-main h2{
+        width: 100%;
+        margin: auto;
+        margin-block: 2rem;
+        /* outline: 2px solid; */
+    }
+    .account-main ul{
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        width: 100%;
+    }
+    .account-main ul img:last-child{
+        width: max-content;
+        margin-left: auto;
+    }
+    /* INFORMATION */
+    .account-info{
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: left;
+        height: 51px;
+        position: fixed;
+        top: 0;
+        box-shadow: 2px 2px 3px gray;
+     }
+     .account-info img{
+        display: inline-block;
+        width: 20px;
+        margin-left: 1rem;
+     }
+     .account-info h1{
+        font-size: .9rem;
+        font-weight: 500;
+        text-align: left;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        width: 100%;
+      }
+     .info-main{
+         width: 100%;
+         margin: auto;
+         margin-top: 82px;
+         background-color: #fff;
+         display: flex;
+         flex-direction: column;
+         position: absolute;
+         inset: 0;
+         top: -5%;
+     }
+     .sub-info{
+         height: 70%;
+         width: 80%;
+         margin-inline: 10%;
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+         margin-top: 2rem;
+     }
+     .info-main ul{
+         display: flex;
+         gap: 1rem;
+         list-style: none;
+         width: 100%;
+     }
+     .info-main ul li{
+       font-size: .8rem;
+    }
+    .info-main ul img:first-child{
+     width: 20px;
+    }
+     .info-main ul img:last-child{
+         width: max-content;
+         margin-left: auto;
+         width: 20px;
+     }
 }
