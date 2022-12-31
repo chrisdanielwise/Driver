@@ -22,7 +22,7 @@
     .main-vendor{
        display: grid;
        grid-template-columns: 1fr;
-       gap: 2rem;
+       gap: .5rem;
     }
     .main-vendor a{
         color: black;
@@ -60,7 +60,7 @@
     }
     .vendor-list1  h1 span{
         color: #EC3237;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .vendor-list1 li p{
         font-size: .8rem;
@@ -78,7 +78,7 @@
         width: 100%;
     }
     .vendor-list2  h1 span{
-        font-size: 1.2;
+        font-size: 1.3rem;
       color: #2E9A2B;
     }
     .vendor-list2 li p{
