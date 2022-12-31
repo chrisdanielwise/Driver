@@ -922,9 +922,19 @@
         display: inline-block;
         border: 1px solid #24D720;
         color: #24D720;
-        ;
         border-radius: 15px;
         padding-inline: 5px;
+    }
+    .accepted-grid .delivered{
+            position: absolute;
+            top: 10%;
+            right: 15%;
+            font-size: .5rem;
+            display: inline-block;
+            border: 1px solid gray;
+            color: gray;
+            border-radius: 15px;
+            padding-inline: 5px;
     }
     .accepted-grid .more-icon{
         position: absolute;
